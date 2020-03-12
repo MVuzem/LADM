@@ -1,6 +1,7 @@
-package Party
+package party
 
-type LA_Party struct {
-    name string
-    age  int
+// LAParty LA Party
+type LAParty struct {
+	Name string
+	Age  int
 }
