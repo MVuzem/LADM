@@ -7,9 +7,9 @@ type LAParty struct {
 	shared.VersionedObject
 
 	// LA_Party
-	ExtPid string
+	ExtPid *shared.Oid
 	Name   string
-	Pid    string
+	Pid    shared.Oid
 	Role   string
 	Type   string
 }

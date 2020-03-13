@@ -4,10 +4,8 @@ import "github.com/MVuzem/LADM/shared"
 
 // LAGroupParty Group party
 type LAGroupParty struct {
-	shared.VersionedObject
+	LAParty
 
-	// Versioned object
-	ID                   string
-	BeginLifespanVersion string
-	EndLifespanVersion   string
+	GroupID shared.Oid
+	Type    string
 }
