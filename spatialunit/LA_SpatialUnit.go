@@ -39,7 +39,7 @@ func (su LASpatialUnit) createVolume() string {
 }
 
 // GMPoint Point
-type GMPoint string
+type GMPoint string // TODO external package
 
 // LADimensionType Dimension type
 type LADimensionType int
