@@ -6,5 +6,7 @@ import "github.com/MVuzem/LADM/shared"
 type LAPartyMember struct {
 	shared.VersionedObject
 
-	Share shared.Fraction
+	Share   *shared.Fraction
+	Parties []LAPartyMember
+	Groups  []LAGroupParty
 }

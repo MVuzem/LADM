@@ -7,5 +7,14 @@ type LAGroupParty struct {
 	LAParty
 
 	GroupID shared.Oid
-	Type    string
+	Type    LAGroupPartyType
+	Members *LAPartyMember
 }
+
+// LAGroupPartyType Group party type
+type LAGroupPartyType int
+
+const (
+	// DefaultGroupParty Default Group party type
+	DefaultGroupParty LAGroupPartyType = 0
+)
