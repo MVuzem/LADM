@@ -7,6 +7,14 @@ type LABaunit struct {
 	shared.VersionedObject
 
 	Name string
-	Type string
+	Type LABAUnitType
 	UID  shared.Oid
 }
+
+// LABAUnitType BA unit type
+type LABAUnitType int
+
+const (
+	// DefaultBAUnit Default BA unit type
+	DefaultBAUnit LABAUnitType = 0
+)
